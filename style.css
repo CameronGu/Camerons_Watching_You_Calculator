@@ -9,15 +9,23 @@ body {
     margin: 0;
     background: linear-gradient(to right, #b2deec,#c56183);
     position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 5fr 1fr;
 }
 
 .calc-grid {
     position: relative;
+    grid-column: 2/3;
+    grid-row: 2/3;
     display: grid;
     justify-content: center;
     align-content: center;
-    min-height: 100vh;
-    grid-template: 25px minmax(120px, auto) repeat(5,120px) / repeat(4,100px);
+    min-height: 70vh;
+    max-width: 50vh;
+    min-width: 350px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr repeat(5, 1fr);
     z-index: 100;
 }
 
